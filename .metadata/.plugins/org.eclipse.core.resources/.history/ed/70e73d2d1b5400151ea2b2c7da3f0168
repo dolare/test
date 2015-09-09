@@ -1,0 +1,42 @@
+import java.util.Vector;
+
+import javax.swing.DefaultListModel;
+import javax.swing.JFrame; 
+import javax.swing.JList; 
+import javax.swing.JScrollPane; 
+
+public class test { 
+
+  public static void main(String[] a) { 
+    JFrame frame = new JFrame(); 
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+    DefaultListModel listModel = new DefaultListModel();
+    Vector months = new Vector(); 
+   
+    JList list = new JList(listModel); 
+    for (int i = 0; i < months.size(); i++) {
+		listModel.addElement(months.get(i));
+	}
+
+//用Vector对象创建JList，可以在创建后增加内容，而采用数组创建则不可以 
+
+   listModel.addElement("January"); 
+   listModel.addElement("January"); 
+   listModel.addElement("January"); 
+   listModel.addElement("January"); 
+   listModel.addElement("January"); 
+   listModel.addElement("January"); 
+   listModel.addElement("January"); 
+   listModel.addElement("January"); 
+   listModel.addElement("January"); 
+   listModel.addElement("January"); 
+    
+    
+    frame.add(new JScrollPane(list)); 
+
+    frame.setSize(300, 200); 
+    frame.setVisible(true); 
+    listModel.addElement("1January"); 
+  } 
+
+} 

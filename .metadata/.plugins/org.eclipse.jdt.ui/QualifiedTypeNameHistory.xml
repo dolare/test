@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.Frame"/>
+<fullyQualifiedTypeName name="Dict"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="javax.swing.JMenuBar"/>
+<fullyQualifiedTypeName name="javax.swing.JMenu"/>
+<fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+<fullyQualifiedTypeName name="test"/>
+<fullyQualifiedTypeName name="java.awt.event.MouseAdapter"/>
+<fullyQualifiedTypeName name="java.awt.event.MouseEvent"/>
+<fullyQualifiedTypeName name="javax.swing.border.LineBorder"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="java.awt.GridLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JSpinner"/>
+<fullyQualifiedTypeName name="javax.swing.JList"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="javax.swing.event.DocumentListener"/>
+<fullyQualifiedTypeName name="javax.swing.text.Document"/>
+<fullyQualifiedTypeName name="javax.swing.event.DocumentEvent"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.PUBLIC_MEMBER"/>
+<fullyQualifiedTypeName name="java.lang.Void"/>
+<fullyQualifiedTypeName name="javax.swing.DefaultListModel"/>
+<fullyQualifiedTypeName name="javax.swing.JTextField"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+<fullyQualifiedTypeName name="java.awt.Font"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+</qualifiedTypeNameHistroy>

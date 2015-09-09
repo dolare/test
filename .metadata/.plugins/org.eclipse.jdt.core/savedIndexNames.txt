@@ -1,0 +1,22 @@
+INDEX VERSION 1.127+C:\Users\Dolare\Desktop\myCode\test\.metadata\.plugins\org.eclipse.jdt.core
+2823120219.index
+62211881.index
+2263726651.index
+3291342716.index
+2001858422.index
+844288559.index
+467374341.index
+2311399233.index
+2116424332.index
+1458623591.index
+2176359688.index
+1751653585.index
+2450487292.index
+1746989635.index
+849464466.index
+3419403911.index
+3772720666.index
+3735833794.index
+2832215389.index
+1266190294.index
+2961438060.index

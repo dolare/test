@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_7YN-IFEcEeWHXbtNOVPNXQ" name="NewModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_YhTiQFEfEeWRH8JsBLRPNw" name="Package1">
+    <packagedElement xmi:type="uml:Class" xmi:id="_rFoZEFEfEeWRH8JsBLRPNw" name="旅行社">
+      <ownedAttribute xmi:id="_DKWEYFEiEeWRH8JsBLRPNw" name="机票">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DKXSgFEiEeWRH8JsBLRPNw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKXSgVEiEeWRH8JsBLRPNw" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_lFcQ4FEiEeWRH8JsBLRPNw" name="买机票"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q4aE8FEkEeWRH8JsBLRPNw" name="机票">
+      <ownedAttribute xmi:id="_TTzJUFEkEeWRH8JsBLRPNw" name="票价">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TTzJUVEkEeWRH8JsBLRPNw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TT0XcFEkEeWRH8JsBLRPNw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="__n-dUFGDEeWRH8JsBLRPNw" name="时间">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__oFLAFGDEeWRH8JsBLRPNw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__oFLAVGDEeWRH8JsBLRPNw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Ajx-QFGEEeWRH8JsBLRPNw" name="票名">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ajx-QVGEEeWRH8JsBLRPNw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ajx-QlGEEeWRH8JsBLRPNw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

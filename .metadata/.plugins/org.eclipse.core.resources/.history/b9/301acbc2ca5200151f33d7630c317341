@@ -1,0 +1,21 @@
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+
+public class test extends JFrame {
+	
+	ImageIcon tt = new ImageIcon("image//logo.png");
+	
+	public test(){
+		super("show how to chage iframe icon");
+		this.setIconImage(tt.getImage());
+		this.setSize(400, 200);
+		this.setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		test jc = new test();
+		
+	}
+	
+}

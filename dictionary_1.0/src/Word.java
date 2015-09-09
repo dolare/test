@@ -1,0 +1,13 @@
+
+public class Word {
+	private String en;
+	private String ch;
+	private String suffix;
+	
+	public String toString(){
+		return en +"    " + ch + "." + suffix;
+	}
+	
+	
+	
+}

@@ -1,0 +1,151 @@
+import javax.swing.border.LineBorder;
+import javax.swing.event.DocumentEvent;
+import javax.swing.text.Document;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Vector;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+
+
+
+public class Dict {
+	
+	private JTextArea wordusage;
+
+
+	private JFrame frame;
+	private DefaultListModel listModel;
+	private Vector<String> words = new Vector<String>();
+	private Vector<Vector<String>> subWords = new Vector<Vector<String>>();
+	private JList jl;
+	private JScrollPane jsc;
+	private JTextField jText ;
+	
+	public Dict(){
+		getWords();
+		initDict();		
+	}
+	
+	public void initDict() {
+	
+		frame = new JFrame();
+		frame.setTitle("сп╣ю");	
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    frame.setBounds(100, 100, 300, 660);
+//		frame.setSize(300, 600);
+		frame.setIconImage(new ImageIcon("image//logo.png").getImage());
+		frame.getContentPane().setLayout(null);
+		
+//		frame.setLayout(new FlowLayout(FlowLayout.LEFT,0,20));
+
+		final DefaultListModel model = new DefaultListModel(); 
+		for (int i = 0; i < words.size(); i++) {
+			model.addElement(words.get(i));
+		}
+		jl= new JList(model);
+	 	 jsc = new JScrollPane(jl);
+	 	jsc.setBounds(50, 56, 149, 373);
+	 	frame.getContentPane().add(jsc);
+//	 	jl.setBorder(new LineBorder(Color.black, 1, false));
+	 	
+		
+	    jText = new JTextField();
+		jText.setBounds(0, 0, 252, 25);
+		frame.getContentPane().add(jText);
+		/*jText.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				String result = jText.getText();
+				int rLength = result.length();
+				if(result != null){
+					model.clear();
+					for (int i = 0; i < words.size(); i++) {
+						for (int j = 0; j < words.get(i).length() - rLength&&j < rLength; j++) {
+							if(words.get(i).charAt(j) != result.charAt(j))
+								break;
+							if(j == words.get(i).length() - rLength - 1)
+								model.addElement(words.get(i));
+						}
+					}
+				}else{
+					for (int i = 0; i < words.size(); i++) {
+						model.addElement(words.get(i));
+					}
+				}
+			}
+		});*/
+		
+		Document dt = jText.getDocument();
+        dt.addDocumentListener(new  javax.swing.event.DocumentListener(){
+            
+             public void changedUpdate(DocumentEvent documentEvent)   {
+                System.out.println("changed:" );
+            }
+
+            public void insertUpdate(DocumentEvent documentEvent)   {
+                System.out.println("insert");
+            }
+
+            public void removeUpdate(DocumentEvent documentEvent)   {
+               System.out.println("remove");
+            }
+                        
+});
+		
+	}
+	
+	public void getWords(){
+		String fileName = "dictionary.txt";
+		
+		BufferedReader in = null;
+		
+		try{
+			in = new BufferedReader(new FileReader(fileName));
+	
+			String textLine = "";
+		
+			
+			while(( textLine =in.readLine())!=null){
+			    words.add(textLine);
+			 }
+			
+		}catch(Exception e){
+			
+		}
+	
+	}
+	
+	public void getSubWords(){
+		Vector<String> temp = new Vector<String>();
+		
+		for (int i = 0; i < words.size(); i++) {
+			for (int j = 97; j < 123; j++) {
+				
+			}
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		Dict d1 = new Dict();
+	
+		d1.frame.setVisible(true);
+		
+	
+	}
+}
